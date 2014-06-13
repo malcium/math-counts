@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CustomProblemsControl">
+<children><Text id="welcome-text" layoutX="183.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Custom Problems" /><ListView fx:id="addProblems" layoutX="119.0" layoutY="100.0" prefHeight="200.0" prefWidth="126.0" /><ListView fx:id="subProblems" layoutX="355.0" layoutY="100.0" prefHeight="200.0" prefWidth="126.0" /><Button layoutX="152.33837890625" layoutY="311.0" mnemonicParsing="false" onAction="#deleteAdd" text="Delete" /><Button layoutX="388.33837890625" layoutY="311.0" mnemonicParsing="false" onAction="#deleteSub" text="Delete" /><Button layoutX="356.0" layoutY="373.0" mnemonicParsing="false" onAction="#addNew" text="Add New Problems" /><Button layoutX="160.0" layoutY="373.0" mnemonicParsing="false" onAction="#back" text="Back" /><Label id="label" layoutX="153.0" layoutY="74.0" text="Addition:" /><Label id="label" layoutX="379.0" layoutY="74.0" text="Subtraction:" />
+</children>
+<stylesheets>
+    <String fx:value="application/application.css" />
+  </stylesheets>
+  </AnchorPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:controller="application.LogScreenControl" xmlns:fx="http://javafx.com/fxml"
+	alignment="center" hgap="10" vgap="10"
+	styleClass="root">
+	<padding>
+		<Insets top="25" right="25" bottom="10" left="25" />
+	</padding>
+	<gridLinesVisible>false</gridLinesVisible>
+
+	<Text id="welcome-text" text="Math-Counts" GridPane.columnIndex="0"
+		GridPane.rowIndex="0" GridPane.columnSpan="2" />
+
+	<Label id="label" text="User Name:" GridPane.columnIndex="0"
+		GridPane.rowIndex="1" />
+
+	<TextField fx:id="userName"
+		GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+	<Label id="label" text="Password:" GridPane.columnIndex="0"
+		GridPane.rowIndex="2" />
+
+	<PasswordField fx:id="passwordField"
+		GridPane.columnIndex="1" GridPane.rowIndex="2" onAction="#handleLogin"/>
+
+	<HBox spacing="10" alignment="bottom_right" GridPane.columnIndex="1"
+		GridPane.rowIndex="4">
+		<Button text="Sign In" onAction="#handleLogin" />
+	</HBox>
+
+	<Text fx:id="actiontarget" GridPane.columnIndex="1"
+		GridPane.rowIndex="6" />
+		
+	<stylesheets>
+    <URL value="@login.css" />
+  </stylesheets>
+
+</GridPane>
+

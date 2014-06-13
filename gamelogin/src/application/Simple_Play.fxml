@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="root" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SimplePlayControl">
+<children><HBox alignment="CENTER" layoutX="200.0" layoutY="150.0" prefHeight="130.0" prefWidth="600.0" AnchorPane.bottomAnchor="270.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+<children><GridPane prefHeight="130.0" prefWidth="624.0">
+  <columnConstraints>
+    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="215.0" minWidth="10.0" prefWidth="215.0" />
+<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="196.0" minWidth="10.0" prefWidth="185.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+<children><Text id="welcome-text" strokeType="OUTSIDE" strokeWidth="0.0" text="Math-Counts" GridPane.columnIndex="1" GridPane.rowIndex="1">
+<font>
+<Font name="System Bold" size="24.0" />
+</font></Text><Label fx:id="questionNumber" text="Label" GridPane.columnIndex="2" /><Label fx:id="sub" text="Label" /><Label fx:id="lev" text="Label" GridPane.columnIndex="1" />
+</children>
+</GridPane>
+</children></HBox><HBox alignment="CENTER" layoutX="2.0" layoutY="150.0" prefHeight="139.0" prefWidth="600.0" AnchorPane.bottomAnchor="133.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="128.0">
+<children><GridPane prefHeight="139.0" prefWidth="604.0">
+  <columnConstraints>
+    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+<children><Label id="number" fx:id="firstNum" text="firstNum" /><Label id="number" fx:id="secondNum" text="secondNum" GridPane.columnIndex="2" /><Label id="number" text="=" GridPane.columnIndex="3" /><TextField fx:id="studentAnswerBox" onAction="#enter" GridPane.columnIndex="4" /><Label id="number" fx:id="operator" text="operator" GridPane.columnIndex="1" />
+</children>
+</GridPane>
+</children></HBox><HBox alignment="CENTER" layoutX="200.0" layoutY="273.0" prefHeight="139.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="261.0">
+<children><GridPane prefHeight="139.0" prefWidth="602.0">
+  <columnConstraints>
+    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+<children><Button mnemonicParsing="false" onAction="#back" text="Back" /><Button mnemonicParsing="false" onAction="#logout" text="Logout" GridPane.rowIndex="2" /><Button fx:id="enterButton" mnemonicParsing="false" onAction="#enter" text="Enter" GridPane.columnIndex="2" /><Button mnemonicParsing="false" onAction="#newQuestion" text="Next Question" GridPane.columnIndex="2" GridPane.rowIndex="2" /><ImageView fx:id="imageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1" /><Label fx:id="score" text="Label" GridPane.rowIndex="1" /><Label fx:id="correctAnswer" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+</children>
+</GridPane>
+</children></HBox>
+</children>
+<stylesheets>
+    <URL value="@game.css" />
+  </stylesheets>
+</AnchorPane>

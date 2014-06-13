@@ -1,0 +1,101 @@
+root { 
+    display: block;
+}
+
+.root {
+	-fx-alignment:left;
+	-fx-background-image: url("chalkboard.png");
+	-fx-background-color: black;
+}
+.label {
+	-fx-font-family: "Comic Sans MS";
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+#label {
+	-fx-font-family: "Comic Sans MS";
+	-fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+#grid {
+	-fx-background-color: black;
+	/*-fx-background-insets: 10;*/
+    -fx-background-radius: 5;
+    -fx-effect: dropshadow(three-pass-box, purple, 10, 0, 0, 0);
+}
+#welcome-text {
+   -fx-font-size: 32px;
+   -fx-font-family: "Comic Sans MS";
+   /*-fx-fill: #818181;*/
+   -fx-fill: white;
+   -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+
+#actiontarget {
+  -fx-fill: FIREBRICK;
+  -fx-font-weight: bold;
+  -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );  
+}
+
+#number {
+   -fx-font-size: 55px;
+   -fx-font-family: "Comic Sans MS";
+   -fx-text-fill: green;
+  
+}
+.text-field {
+	-fx-fill: black;
+	-fx-font-family: bold "Comic Sans MS";
+	-fx-text-fill: green;
+	-fx-font-weight: bold;
+	-fx-font-size:55px;
+	-fx-background-color:black;
+}
+
+.button {
+    -fx-padding: 5 10 5 10;
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-border-radius: 3;
+    -fx-background-color: #1d1d1d;
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 12pt;
+    -fx-text-fill: #d8d8d8;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+.button:hover {
+    -fx-background-color: #3a3a3a;
+}
+
+.button:pressed, .button:default:hover:pressed {
+  -fx-background-color: white;
+  -fx-text-fill: #1d1d1d;
+}
+
+.button:focused {
+    -fx-border-color: white, white;
+    -fx-border-width: 1, 1;
+    -fx-border-style: solid, segments(1, 1);
+    -fx-border-radius: 0, 0;
+    -fx-border-insets: 1 1 1 1, 0;
+}
+
+.button:disabled, .button:default:disabled {
+    -fx-opacity: 0.4;
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: white;
+}
+
+.button:default {
+    -fx-background-color: -fx-focus-color;
+    -fx-text-fill: #ffffff;
+}
+
+.button:default:hover {
+    -fx-background-color: derive(-fx-focus-color,30%);
+}

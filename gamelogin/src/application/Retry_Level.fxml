@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RetryLevelControl">
+<children><GridPane layoutX="200.0" layoutY="155.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+  <columnConstraints>
+    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="195.0" minHeight="10.0" prefHeight="89.0" vgrow="SOMETIMES" />
+<RowConstraints maxHeight="195.0" minHeight="10.0" prefHeight="89.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="280.0" minHeight="10.0" prefHeight="234.0" vgrow="SOMETIMES" />
+<RowConstraints maxHeight="280.0" minHeight="10.0" prefHeight="87.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+<children><Text id="welcome-text" strokeType="OUTSIDE" strokeWidth="0.0" text="Better Luck Next Time!" /><ImageView fx:id="image" fitHeight="232.0" fitWidth="314.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2" /><Button mnemonicParsing="false" onAction="#greatJob" text="Retry Level" GridPane.rowIndex="3" /><Label fx:id="score" text="Label" GridPane.rowIndex="1" />
+</children>
+</GridPane>
+</children>
+<stylesheets>
+    <String fx:value="application/game.css" />
+  </stylesheets>
+</AnchorPane>
