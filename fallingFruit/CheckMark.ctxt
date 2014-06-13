@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=
+comment0.target=CheckMark()
+comment0.text=\r\n\ Setup\ for\ the\ panel\ design.\ Loads\ images.\r\n
+comment1.params=b
+comment1.target=void\ setCorrect(boolean)
+comment1.text=\r\n\ Determines\ the\ image\ to\ draw.\r\n\ @param\ true\ if\ the\ answer\ was\ correct\ and\ false\ otherwise.\r\n
+comment2.params=b
+comment2.target=void\ setAnswered(boolean)
+comment2.text=\r\n\ Determines\ whether\ the\ new\ question\ has\ been\ answered\ yet.\r\n\ @param\ true\ if\ the\ question\ has\ been\ answered\ yet\ and\ false\ otherwise.\r\n
+comment3.params=s
+comment3.target=void\ setText(java.lang.String)
+comment3.text=\r\n\ Sets\ the\ contents\ of\ the\ previous\ problem.\r\n\ @param\ The\ formated\ question\ and\ answer\ to\ be\ printed.\r\n
+comment4.params=g
+comment4.target=void\ paintComponent(java.awt.Graphics)
+comment4.text=\r\n\ This\ method\ renders\ the\ component.\r\n\ @param\ g\ The\ Graphics\ object\ used\ to\ render\ \ \r\n
+numComments=5
